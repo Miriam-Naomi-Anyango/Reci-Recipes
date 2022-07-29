@@ -33,7 +33,7 @@ code {
 }
 
 .navigation-items{
-  display: contents;
+  display: inline-flex;
   padding-right: 20px;
   margin-right: 10px;
   font-weight: 700;
