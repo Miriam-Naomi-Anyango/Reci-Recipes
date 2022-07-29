@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 *{
   font-family: Montserrat;
+  box-sizing: border-box;
+}
+.container{
+  background-color: white;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 30px auto;
+  border-radius: 20px;
 }
 body {
   margin: 0;
@@ -67,4 +75,29 @@ code {
   background-color: black;
   margin-top: 20px;
 }
-
+.meals{
+  display: inline-grid;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.card{
+  width: 200px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+.card-image{
+  width: 100%;
+}
+.card-body{
+  padding: 10px;
+  text-align: center;
+}
+.category{
+  color: orange;
+}
