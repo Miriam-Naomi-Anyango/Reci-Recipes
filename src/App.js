@@ -24,8 +24,18 @@ function App() {
   const dish= meals.map((meal)=>{
     return(
       <>
-      <h1>{meal.strMeal}</h1>
-      <img alt={meal.strMeal} src={meal.strMealThumb} />
+      <div className='card'>
+      <img 
+      src={meal.strMealThumb}
+      alt={meal.strMeal} 
+      className="card-image" 
+      />
+      
+      <div className='card-body'>
+        <span className='category'>{meal.strCategory}</span>
+        <h3>{meal.strMeal}</h3>
+      </div>
+      </div>
       </>
     )
   })
