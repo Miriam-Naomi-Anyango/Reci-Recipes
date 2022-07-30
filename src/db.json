@@ -1,5 +1,4 @@
-{
-  "meals":  [
+[
     {
     "idMeal": "52977",
     "strMeal": "Corba",
@@ -1375,5 +1374,4 @@
     "strCreativeCommonsConfirmed": null,
     "dateModified": null
     }
-    ]
-    }
+]

@@ -1,11 +1,13 @@
 import React from 'react'
 
-export const Home = () => {
+export const Home = ({dish}) => {
   return (
     <div>
-      <h3>This is my Homepage</h3>
-
+      <div>
+      {dish}
+      </div>
     </div>
+
   )
 }
 export default Home;

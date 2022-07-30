@@ -9,9 +9,10 @@ import Footer from './Components/Footer';
 
 
 
+
 function App() {
   const [meals, setMeals] = useState([]);
-
+  
   useEffect(() => {
     fetch('http://localhost:3000/meals')
     .then((r) => r.json())
@@ -44,10 +45,10 @@ function App() {
     <NavBar />
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home dish = {dish}/>
         </Route>
         <Route exact path="/recipe">
-          <Recipe dish = {dish}/>
+          <Recipe />
         </Route>
         <Route exact path="/help">
           <Help />
