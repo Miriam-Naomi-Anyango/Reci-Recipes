@@ -3,11 +3,14 @@ import data from '../db.json'
 function Recipe(){
   const [searchTerm, setSearchTerm] = useState("")
 
+ 
+  
   return (
+
   <>
    <div className='templateContainer'>
-     <div className='searchInput_Container'>
-     <input id="serchInput" type="text" placeholder='Search Recipe...' onChange={(event) =>{
+     <div className='myInput'>
+     <input id="searchInput" type="text" placeholder='Search Recipe...' onChange={(event) =>{
        setSearchTerm(event.target.value);
      }} />
      </div>
@@ -32,6 +35,7 @@ function Recipe(){
               <div className='card-body'>
                 <span className='category'>{val.strCategory}</span>
                 <h3>{val.strMeal}</h3>
+                <h5>{val.strArea}</h5>
               </div>
               </div>
             </div>

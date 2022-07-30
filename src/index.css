@@ -107,3 +107,10 @@ code {
   flex-wrap: wrap;
   margin-top: 50px;
 }
+.myInput{
+  margin-top: 20px;
+}
+#searchInput{
+  margin-top: 20px;
+  margin-left: 800px;
+}
