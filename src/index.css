@@ -32,9 +32,10 @@ code {
 }
 
 .navigation-items{
-  display: inline-flex;
-  padding-right: 20px;
-  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 70px;
+  margin-right: 70px;
   font-weight: 700;
 }
 
