@@ -115,3 +115,7 @@ code {
   margin-top: 20px;
   margin-left: 800px;
 }
+.banner{
+  display: flex;
+  justify-content: space-between;
+}

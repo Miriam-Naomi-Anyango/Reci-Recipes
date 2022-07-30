@@ -14,17 +14,22 @@ export const Home = ({dish}) => {
           No need to worry again!<br />
           Reci is the place to be...</p>
         </div>
-      </div>
-      <div className='picha'>
+        <div>
         <img 
         src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtGAy-rlgerfkDOhnRWKaoczq5MVFg9Tt6EQ&usqp=CAU'
         alt='patter'
+        className='is'
         />
+        </div>
+        <div>
         <img 
         src='https://t4.ftcdn.net/jpg/03/09/28/17/360_F_309281741_9mv4msJPDjPPIxlqaHPIpxWVFg31AlyA.jpg'
         alt='burger'
+        className='isi'
         />
+        </div>
       </div>
+     
       <div className= "food-display">
         <div text>
           <h1><strong>Popular Food</strong></h1>
