@@ -119,3 +119,19 @@ code {
   display: flex;
   justify-content: space-between;
 }
+.wordings{
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 150px;
+}
+
+.is{
+  padding: 200px;
+}
+
+.isi{
+  padding: 150px;
+}
+.grad{
+  background-image: linear-gradient(left to right, green,orange);
+}

@@ -29,6 +29,7 @@ export const Home = ({dish}) => {
         />
         </div>
       </div>
+      <hr className='grad'></hr>
      
       <div className= "food-display">
         <div text>
