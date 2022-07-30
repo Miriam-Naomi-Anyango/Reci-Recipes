@@ -11,7 +11,7 @@ import Footer from './Components/Footer';
 
 
 function App() {
-  const [meals, setMeals] = useState([]);
+  const [meals, setMeals] = useState([]);  
   
   useEffect(() => {
     fetch('http://localhost:3000/meals')

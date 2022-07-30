@@ -6,10 +6,9 @@
 }
 .container{
   background-color: white;
-  max-width: 1000px;
-  min-height: 100vh;
-  margin: 30px auto;
-  border-radius: 20px;
+  width: 90%;
+  min-width: 500px;
+  margin: auto;
 }
 body {
   margin: 0;
@@ -100,4 +99,11 @@ code {
 }
 .category{
   color: orange;
+}
+
+.template{
+  display: inline-grid;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }

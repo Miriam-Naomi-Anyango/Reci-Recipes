@@ -11,7 +11,7 @@ function Recipe(){
        setSearchTerm(event.target.value);
      }} />
      </div>
-     <div className='template_Container'>
+     <div className='recipes-good'>
      {
        data.filter((val) =>{
             if(searchTerm === ""){
@@ -21,13 +21,20 @@ function Recipe(){
             }
           }).map((val) =>{
             return(
-              <div className='template' key={val.idMeal}>
-                <img
-                src={val.strMealThumb} 
-                alt={val.strMeal}
-                />
+              <div className='meals'>
+              <div className='card'>
+                <img 
+                src={val.strMealThumb}
+                alt={val.strMeal} 
+                className="card-image" 
+              />
+            
+              <div className='card-body'>
+                <span className='category'>{val.strCategory}</span>
                 <h3>{val.strMeal}</h3>
               </div>
+              </div>
+            </div>
             )
           })
      }
