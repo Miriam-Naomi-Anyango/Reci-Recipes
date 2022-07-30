@@ -24,7 +24,7 @@ function Recipe(){
               <div className='template' key={val.idMeal}>
                 <img
                 src={val.strMealThumb} 
-                alt=""
+                alt={val.strMeal}
                 />
                 <h3>{val.strMeal}</h3>
               </div>
