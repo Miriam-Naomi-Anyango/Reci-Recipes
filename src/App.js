@@ -2,10 +2,11 @@ import React, {useState, useEffect} from 'react';
 import NavBar from './Components/NavBar';
 import './App.css';
 import Home from './Components/Home';
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Recipe from './Components/Recipe';
 import Help from './Components/Help';
 import Footer from './Components/Footer';
+import Display  from './Components/Display';
 
 
 
@@ -22,38 +23,21 @@ function App() {
     })
   })
 
-  const dish= meals.map((meal)=>{
-    return(
-      <div className='meals'>
-        <div className='card'>
-          <img 
-          src={meal.strMealThumb}
-          alt={meal.strMeal} 
-          className="card-image" 
-        />
-      
-        <div className='card-body'>
-          <span className='category'>{meal.strCategory}</span>
-          <h3>{meal.strMeal}</h3>
-        </div>
-        </div>
-      </div>
-    )
-  })
+  
   return (
     <div>
     <NavBar />
-      <Switch>
-        <Route exact path="/">
-          <Home dish = {dish}/>
+      <Routes>
+
+        <Route path="/" element={<Home meals={meals}/>} />
+          
+
+        <Route path="/recipe" element={<Recipe />} >
+          <Route path="display" element={<Display />} />
         </Route>
-        <Route exact path="/recipe">
-          <Recipe />
-        </Route>
-        <Route exact path="/help">
-          <Help />
-        </Route>
-      </Switch> 
+        <Route exact path="/help" element={<Help />} />
+          
+      </Routes> 
       <Footer />
     </div> 
   );

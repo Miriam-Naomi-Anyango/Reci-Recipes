@@ -39,7 +39,7 @@ function NavBar() {
       </NavLink>
 
       <NavLink
-        to="/recipe"
+        to="/recipe/display"
         exact
         style={linkStyles}
         activeStyle={{

@@ -133,5 +133,9 @@ code {
   padding: 150px;
 }
 .grad{
-  background-image: linear-gradient(left to right, green,orange);
+  background-image: linear-gradient(to right, green,orange);
+}
+.text{
+  padding: 50px;
+  margin-left: 700px;
 }
