@@ -139,3 +139,8 @@ code {
   padding: 50px;
   margin-left: 700px;
 }
+.footer{
+  position: fixed;
+  top: 100vh;
+  left: 0;
+}

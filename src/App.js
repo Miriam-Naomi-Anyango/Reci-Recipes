@@ -15,7 +15,7 @@ function App() {
   const [meals, setMeals] = useState([]);  
   
   useEffect(() => {
-    fetch('http://localhost:3000/meals')
+    fetch('https://reci-react.herokuapp.com/meals')
     .then((r) => r.json())
     .then((data) => {
       console.log(data);

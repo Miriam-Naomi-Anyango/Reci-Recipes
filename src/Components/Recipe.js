@@ -24,7 +24,7 @@ function Recipe(){
 
   
   useEffect(() => {
-    fetch('http://localhost:3000/meals')
+    fetch('https://reci-react.herokuapp.com/meals')
     .then((r) => r.json())
     .then((data) => {
       console.log(data);
@@ -47,6 +47,12 @@ function Recipe(){
             if(searchTerm === ""){
               return val;
             }else if (val.strMeal.toLowerCase().includes(searchTerm.toLowerCase())){
+              return val;
+            }
+            else if (val.strArea.toLowerCase().includes(searchTerm.toLowerCase())){
+              return val;
+            }
+            else if (val.strCategory.toLowerCase().includes(searchTerm.toLowerCase())){
               return val;
             }
           }).map((val) =>{
