@@ -44,4 +44,22 @@ As a user of this web application, you will be able to:
 
 Note: All the search criteria are functioning and meals are displayed accordingly, however the instructions part is not clickable in order to allow for reading of its contents.
 
+## Installation Requirement
+In order to install and use the application one will require the following
+
+* Access to eithera computer, a smartphone a tablet or any other gadget.
+* Access to Internet/ Internet connection.
+
+## Live Link
+Click this link to view the live application.
+
+LiveLink -[Heroku Live Link](
+https://reci-recipes.herokuapp.com/)
+
+
+## Technology Used 
+
+* CSS - Used to style the user Interface.
+
+* React - Used to add interactivity to the website and acheieve the functionality of the app, by offering appropriate information the user may seek for.
 
