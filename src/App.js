@@ -8,9 +8,6 @@ import Help from './Components/Help';
 import Footer from './Components/Footer';
 import Display  from './Components/Display';
 
-
-
-
 function App() {
   const [meals, setMeals] = useState([]);  
   
@@ -23,20 +20,15 @@ function App() {
     })
   })
 
-  
   return (
     <div>
     <NavBar />
       <Routes>
-
-        <Route path="/" element={<Home meals={meals}/>} />
-          
-
+        <Route path="/" exact element={<Home meals={meals}/>} />
         <Route path="/recipe" element={<Recipe />} >
           <Route path="display" element={<Display />} />
         </Route>
-        <Route exact path="/help" element={<Help />} />
-          
+        <Route path="/help" element={<Help />} />  
       </Routes> 
       <Footer />
     </div> 

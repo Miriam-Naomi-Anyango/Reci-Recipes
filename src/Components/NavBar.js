@@ -8,7 +8,6 @@ const linkStyles = {
   margin: "0 6px 6px",
   textDecoration: "none",
   color: "white",
-
 };
 
 function NavBar() {
@@ -17,7 +16,6 @@ function NavBar() {
       <div className="logo">
       <NavLink
         to="/"
-        exact
         style={linkStyles}
         activeStyle={{
           background: "orange",
@@ -29,7 +27,6 @@ function NavBar() {
     <div className="navigation-items">
       <NavLink
         to="/"
-        exact
         style={linkStyles}
         activeStyle={{
           background: "orange",
@@ -39,8 +36,7 @@ function NavBar() {
       </NavLink>
 
       <NavLink
-        to="/recipe/display"
-        exact
+        to="/recipe"
         style={linkStyles}
         activeStyle={{
           background: "orange",
@@ -52,7 +48,6 @@ function NavBar() {
 
       <NavLink
         to="/help"
-        exact
         style={linkStyles}
         activeStyle={{
           background: "orange",

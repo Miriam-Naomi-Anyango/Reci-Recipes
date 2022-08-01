@@ -144,3 +144,15 @@ code {
   top: 100vh;
   left: 0;
 }
+.form{
+  display: flex;
+  flex-direction: column;
+}
+form{
+  width: 50%;
+}
+label{
+  font-weight:900;
+  font-size:20px;
+}
+

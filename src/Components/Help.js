@@ -19,8 +19,9 @@ function Help(){
         Tel: 0769996443<br />
         Email: info@reci.co.ke
     </h4>
+     
     </div> 
-    
+   
     </div>
     </>
   )

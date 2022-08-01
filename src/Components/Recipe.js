@@ -1,26 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import {useParams} from 'react-router'
-
-
-
+//import {useParams} from 'react-router'
 
 function Recipe(){
   const [searchTerm, setSearchTerm] = useState("")
   const [meals, setMeals] = useState([])
   
 
-  const Display = ({val}) => {
-    let {food} = useParams()
-  return (
-    <div id={food}>
-        <p>hello world</p>
-        <img src= {val.strMealThumb}/>
-        <p>{val.strInstructions}</p>
-        <a href={val.strYoutube}>Watch Instructions</a>
-    </div>
-  )
-}
+//  const Display = ({val}) => {
+//    let {food} = useParams()
+//  return (
+//    <div id={food}>
+//        <p>hello world</p>
+//        <img src= {val.strMealThumb}/>
+//        <p>{val.strInstructions}</p>
+//        <a href={val.strYoutube}>Watch Instructions</a>
+//    </div>
+//  )
+//}
 
   
   useEffect(() => {
@@ -33,7 +30,6 @@ function Recipe(){
   })
 
   return (
-
   <>
    <div className='templateContainer'>
      <div className='myInput'>
@@ -70,16 +66,18 @@ function Recipe(){
                 <span className='category'>{val.strCategory}</span>
                 <h3>{val.strMeal}</h3>
                 <h5>{val.strArea}</h5>
+                
                 <NavLink to="/recipe/display">Instructions</NavLink>
               </div>
               </div>
             </div>
             )
+            
           })
+          
      }
    </div>
    </div>
-   
   </>
     
   )
