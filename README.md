@@ -35,3 +35,13 @@ Reci is a web application that can offer recipe and ingredient required to prepa
 
 </p>
 
+## Features
+As a user of this web application, you will be able to:
+1. See the navigation bar with the menu items, Home, Recipe and help as well as the logo.
+
+2. See a display of popular foods on the homepage. In the recipe page, there's a list of displayed meals with a search bar on top having a placeholder of "Search Recipe". The Search Input field allows for search of recipe by either typing a name of the desired meal type, or cuisine i.e "Turkish", "Egyptian", "Indian" or category i.e "Main", "Side", or "Vegetarian". This filters and grants you only the list of meals matching the search name following chosen search criterion.
+
+
+Note: All the search criteria are functioning and meals are displayed accordingly, however the instructions part is not clickable in order to allow for reading of its contents.
+
+
