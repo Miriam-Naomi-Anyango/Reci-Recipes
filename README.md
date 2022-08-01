@@ -63,3 +63,6 @@ https://reci-recipes.herokuapp.com/)
 
 * React - Used to add interactivity to the website and acheieve the functionality of the app, by offering appropriate information the user may seek for.
 
+## Future Improvement
+The application offers the ability to search for recipes by name, cuisine or meal category, however although the instructions section is provided, one can not access it from the site and read its contents therefore. In future this will be implemented.
+
